@@ -1,0 +1,51 @@
+.details-section {
+  grid-row: 2;
+  grid-column: 1/4;
+  align-self: center;
+  justify-self: center;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.img-section {
+  grid-row: 2;
+  grid-column: 4/-1;
+  align-self: center;
+  justify-self: center;
+}
+
+.details-box {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.name-details {
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+.role-details {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 52%);
+}
+.details-buttons-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.my-img {
+  height: 36rem;
+  width: 36rem;
+  border-radius: 50%;
+}
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
