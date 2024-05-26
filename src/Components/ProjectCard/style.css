@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: start;
+  width: 24rem;
+  padding: 2rem;
+  min-width: 30rem;
+  min-height: 34rem;
+  box-shadow: 0 1px 4.4px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(60, 60, 60, 0.3);
+}
+
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #535bf2;
+}
+
+.description {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.icon {
+  fill: #fff;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.technologies-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sub-titel {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+}
+
+.tech-tag {
+  background-color: #4a4a4a;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 2px;
+  white-space: nowrap;
+}

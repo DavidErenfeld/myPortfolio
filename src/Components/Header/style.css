@@ -6,12 +6,24 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   grid-column: 1/-1;
   grid-row: 1;
+  height: 9.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  padding-right: 5rem;
+  z-index: 1000;
+  background-color: hsl(200, 15%, 8%);
+  margin-bottom: 9.6rem;
 }
 
 a.my-name {

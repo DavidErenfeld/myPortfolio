@@ -87,13 +87,15 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  /* padding-top: 9.6rem; */
+  overflow-x: hidden;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   row-gap: 12.8rem;
-  margin: 1rem 3rem;
+  margin: 1rem 5rem;
 }
 
 .flex {
@@ -108,11 +110,16 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.4rem;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 a {
