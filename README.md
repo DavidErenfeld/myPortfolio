@@ -35,7 +35,7 @@ To get this project up and running on your local machine, follow these steps:
    ```
 4. Start the development server:
 5. ```
-   npm start
+   npm run dev
    ```
 
 ## Contact Information
