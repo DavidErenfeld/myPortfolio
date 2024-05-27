@@ -2,30 +2,30 @@
   grid-column: 1/-1;
   grid-row: 1;
   height: 9.6rem;
+  margin: 0rem 2rem 9.6rem 2rem;
   transition: all 0.3s ease-in-out;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: -webkit-fill-available;
-  padding-right: 5rem;
-  z-index: 1000;
-  background-color: hsl(200, 15%, 8%);
-  margin-bottom: 8rem;
-}
-
 .projects-section {
-  grid-row: 3;
+  grid-row: 2;
   grid-column: 1/-1;
 }
 
 .about-me-section {
-  grid-row: 4;
+  grid-row: 3;
   grid-column: 2/6;
 }
 
 .education-section {
+  grid-row: 4;
   grid-column: 1/-1;
+}
+
+.skills-section {
   grid-row: 5;
+  grid-column: 1/-1;
+}
+
+.footer-section {
+  margin-top: 16rem;
 }

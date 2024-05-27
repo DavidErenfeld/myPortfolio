@@ -1,5 +1,5 @@
 .details-section {
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 1/4;
   align-self: center;
   justify-self: center;
@@ -8,7 +8,7 @@
 }
 
 .img-section {
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 4/-1;
   align-self: center;
   justify-self: center;
@@ -16,6 +16,7 @@
 
 .details-box {
   line-height: 1.3;
+  margin-bottom: 2rem;
 }
 
 .name-details {

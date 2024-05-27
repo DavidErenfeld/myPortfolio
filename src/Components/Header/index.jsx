@@ -19,6 +19,9 @@ const Header = ({ sections }) => {
           <a href={`#${sections.aducation}`}>Aducation</a>
         </h3>
         <h3>
+          <a href={`#${sections.skills}`}>Skills</a>
+        </h3>
+        <h3>
           <a href={`#${sections.contact}`}>Contact</a>
         </h3>
       </nuv>

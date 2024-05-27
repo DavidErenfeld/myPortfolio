@@ -5,6 +5,8 @@ import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Aducations from "./Components/Aducations";
+import Skills from "./Components/Skills";
+import Footer from "./Components/Footer";
 
 function App() {
   const headerRef = useRef(null);
@@ -13,6 +15,7 @@ function App() {
     projects: "projects",
     contact: "contact",
     aducation: "aducation",
+    skills: "skills",
   };
 
   useEffect(() => {
@@ -49,34 +52,49 @@ function App() {
     }
   }, []);
   return (
-    <main className="container">
+    <>
       <div ref={headerRef} className="header flex-row-space-between">
         <Header sections={sections} />
       </div>
-      <Hero />
-
+      <main className="container">
+        <Hero learnMore={sections.projects} />
+        <section
+          className="projects-section flex-col-center-center flex-gap-m"
+          id={sections.projects}
+          data-aos="zoom-in"
+        >
+          <Projects />
+        </section>
+        <section
+          className="about-me-section flex-col-center-center flex-gap-m"
+          id={sections.about}
+          data-aos="zoom-in"
+        >
+          <AboutMe />
+        </section>
+        <section
+          className="education-section flex-col-center-center flex-gap-m"
+          id={sections.aducation}
+          data-aos="zoom-in"
+        >
+          <Aducations />
+        </section>
+        <section
+          className="skills-section flex-col-center-center flex-gap-m"
+          id={sections.skills}
+          data-aos="zoom-in"
+        >
+          <Skills />
+        </section>
+      </main>
       <section
-        className="projects-section flex-col-center-center flex-gap-m"
-        id={sections.projects}
-        data-aos="zoom-in"
+        className="footer-section flex-col-center-center flex-gap-m"
+        id={sections.contact}
+        // data-aos="zoom-in"
       >
-        <Projects />
+        <Footer />
       </section>
-      <section
-        className="about-me-section flex-col-center-center flex-gap-m"
-        id={sections.about}
-        data-aos="zoom-in"
-      >
-        <AboutMe />
-      </section>
-      <section
-        className="education-section flex-col-center-center flex-gap-m"
-        id={sections.aducation}
-        data-aos="zoom-in"
-      >
-        <Aducations />
-      </section>
-    </main>
+    </>
   );
 }
 

@@ -1,0 +1,39 @@
+.footer-container {
+  background-color: hsl(200, 15%, 8%);
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  text-align: center;
+  margin-top: 9rem;
+  padding-top: 4rem;
+}
+
+.footer-icons {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.footer-icons a {
+  color: #535bf2;
+  margin: 0 2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: hsl(0, 0%, 52%);
+}
+
+.footer-icon {
+  margin: 0 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer-text {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.footer-icon:hover {
+  width: 4.5rem;
+  height: 4.5rem;
+}

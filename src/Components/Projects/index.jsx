@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="projects">
         <ProjectCard
           projectName="My Portfolio"
-          githubLink="https://github.com/your-repo-link"
+          githubLink="https://github.com/DavidErenfeld/myPortfolio.git"
           websiteLink="https://your-website-link"
           technologies={["Javascript", "React", "HTML", "CSS3"]}
         />

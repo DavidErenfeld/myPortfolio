@@ -1,11 +1,10 @@
 import TextWithAnimation from "../TextWithAnimation";
 import "./style.css";
 
-const Hero = () => {
+const Hero = ({ learnMore }) => {
   return (
     <>
-      {/* // <section className="hero-section flex"> */}
-      <div className="details-section ">
+      <div className="details-section flex-gap-s">
         <div className="details-box flex-col-center-center">
           <p className="name-details">
             <TextWithAnimation
@@ -23,14 +22,20 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex-row-center-start flex-gap-s">
-          <button className="blu-btn">Downlode CV</button>
-          <button>Learn More</button>
+          <a
+            href="./myResume/DavidErenfeld.pdf"
+            download="David_Erenfeld_Resume.pdf"
+          >
+            <button className="blu-btn">Downlode CV</button>
+          </a>
+          <a href={`#${learnMore}`}>
+            <button>Learn More</button>
+          </a>
         </div>
       </div>
       <div className="img-section">
         <img className="my-img" src="./imegs/user.png" alt="my-img" />
       </div>
-      {/* // </section> */}
     </>
   );
 };

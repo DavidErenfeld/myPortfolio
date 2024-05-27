@@ -1,7 +1,52 @@
-.about-me-section > h2 {
+.about-me-container {
+  color: #fff;
+  /* background-color: #333; */
+  padding: 0px 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
+  border-radius: 8px;
+}
+
+.about-intro {
+  color: hsl(0, 100%, 100%);
+  font-size: 2.4rem;
+  font-weight: 600;
   text-align: center;
 }
 
-.my-description {
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.about-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2.4rem;
+}
+
+.about-box > p {
+  font-size: 1.8rem;
+  color: hsl(208, 68%, 75%);
+  font-weight: 500;
+}
+.about-icon {
+  height: 3rem;
+  width: 3rem;
+  color: hsl(0, 0%, 52%);
+  color: #535bf2;
+}
+
+.about-outro {
   text-align: center;
+  color: hsl(0, 100%, 100%);
+  font-weight: 500;
+  letter-spacing: 0.2px;
 }

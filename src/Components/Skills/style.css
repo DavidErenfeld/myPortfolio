@@ -1,0 +1,131 @@
+.skills-section > h2 {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+/* .skills-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.skills-category {
+  margin-bottom: 20px;
+} */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.skills-category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 4rem;
+  cursor: pointer;
+}
+
+.skills-category > p {
+  color: hsl(237, 86%, 64%);
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.skills-category::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 4.4px rgba(98, 130, 157, 0.662);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: -2;
+}
+
+.skills-category::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 4.4px rgba(98, 131, 157, 0.212);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.skills-category:hover::after {
+  height: 32rem;
+  width: 32rem;
+  box-shadow: 0 1px 4.4px hsl(208, 62%, 72%);
+}
+
+.skills-category:hover::before {
+  height: 22rem;
+  width: 22rem;
+  box-shadow: 0 1px 4.4px rgba(98, 131, 157, 0.486);
+}
+
+.skills-category:hover .skill-icon {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.skills-category:hover p {
+  color: hsl(208, 62%, 72%);
+  font-size: 2.8rem;
+}
+
+.skill-icon {
+  margin: 0 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.html {
+  color: #e34f26;
+}
+.css {
+  color: #1572b6;
+}
+.javascript {
+  color: #f7df1e;
+}
+.typescript {
+  color: #3178c6;
+}
+.react {
+  color: #61dafb;
+}
+.node {
+  color: #339933;
+}
+.mongodb {
+  color: #47a248;
+}
+.express {
+  color: #ffffff;
+}
+.jest {
+  color: #c21325;
+}
+.swagger {
+  color: #85ea2d;
+}
