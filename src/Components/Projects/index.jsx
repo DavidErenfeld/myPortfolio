@@ -3,7 +3,7 @@ import "./style.css";
 
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <>
       <h2>My Projects</h2>
       <div className="projects">
         <ProjectCard
@@ -24,14 +24,14 @@ const Projects = () => {
           websiteLink="https://travel-easily.netlify.app/"
           technologies={["Typescript", "React", "HTML", "CSS3"]}
         />
-        <ProjectCard
+        {/* <ProjectCard
           projectName="Travel easily"
           githubLink="https://github.com/your-repo-link"
           websiteLink="https://your-website-link"
           technologies={["nodeJS", "express", "css", "express", "html"]}
-        />
+        /> */}
       </div>
-    </section>
+    </>
   );
 };
 export default Projects;

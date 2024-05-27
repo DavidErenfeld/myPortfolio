@@ -1,15 +1,7 @@
-.about-me-section {
-  grid-row: 4;
-  grid-column: 2/6;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-self: center;
-  justify-content: center;
-}
-.about-me-titel {
+.about-me-section > h2 {
   text-align: center;
 }
+
 .my-description {
   text-align: center;
 }

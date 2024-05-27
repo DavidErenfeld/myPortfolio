@@ -4,17 +4,15 @@ import GithubIcon from "../../Components/Icons/GithubIcon";
 
 const ProjectCard = ({
   projectName,
-  projectDescription,
   websiteLink,
   githubLink,
   technologies,
 }) => {
   return (
-    <section className="card">
-      <h3 className="title">{projectName}</h3>
-      <p className="description">{projectDescription}</p>
-      <div className="links">
-        <div className="link">
+    <section className="card flex-col-start-start">
+      <h3 className="sub-titel">{projectName}</h3>
+      <div className="links flex-col-start-center flex-gap-s">
+        <div className="link flex-row-space-between">
           <div>
             <GithubIcon />
           </div>
@@ -22,7 +20,7 @@ const ProjectCard = ({
             Read More on GitHub
           </a>
         </div>
-        <div className="link">
+        <div className="link flex-row-space-between">
           <div>
             <WebsiteIcon />
           </div>
@@ -31,9 +29,9 @@ const ProjectCard = ({
           </a>
         </div>
       </div>
-      <div className="technologies-container">
-        <p className="sub-titel">technologies</p>
-        <div className="technologies">
+      <div className="flex-col-start-center flex-gap-s ">
+        <h3>technologies</h3>
+        <div className="technologies flex-row-center-start flex-wrap flex-gap-s ">
           {technologies.map((tech) => (
             <span key={tech} className="tech-tag">
               {tech}

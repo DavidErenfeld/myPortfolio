@@ -1,0 +1,93 @@
+.education-section > h2 {
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  background-color: hsl(208, 23%, 50%);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.3rem;
+}
+
+.timeline-item {
+  padding: 2rem;
+  width: 40%;
+  position: relative;
+  box-shadow: 0 3px 6px hsl(208, 23%, 50%);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+  padding: 4rem;
+  border-radius: 6px;
+  width: 40%;
+  position: relative;
+  margin: 1rem 0;
+  box-shadow: 0 3px 6px hsl(208, 68%, 75%);
+  cursor: pointer;
+}
+
+.timeline-item.left {
+  left: 10%;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: -1.3rem;
+  top: 1.5rem;
+  background-color: hsl(208, 62%, 72%);
+  border: 2px solid hsl(208, 23%, 50%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.right::after {
+  left: -1.3rem;
+}
+
+.year {
+  color: #535bf2;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.year > .course-name {
+  color: hsl(0, 0%, 98%);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.study-place-name {
+  color: hsl(0, 0%, 52%);
+  font-size: 1.4rem;
+}
+
+.timeline-item:hover .year {
+  font-size: 2.2rem;
+}
+
+.timeline-item:hover .year > .course-name {
+  font-size: 1.8rem;
+}
+
+.timeline-item:hover .study-place-name {
+  font-size: 1.6rem;
+}

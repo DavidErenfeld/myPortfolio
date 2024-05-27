@@ -3,14 +3,16 @@ import "./App.css";
 import AboutMe from "./Components/AboutMe";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
-import ProjectCard from "./Components/ProjectCard";
 import Projects from "./Components/Projects";
+import Aducations from "./Components/Aducations";
 
 function App() {
+  const headerRef = useRef(null);
   const sections = {
     about: "about",
     projects: "projects",
     contact: "contact",
+    aducation: "aducation",
   };
 
   useEffect(() => {
@@ -25,17 +27,6 @@ function App() {
       AOS.refresh();
     };
   }, []);
-  //   fade-up
-  // fade-down
-  // fade-right
-  // fade-left
-  // zoom-in
-  // zoom-out
-  // flip-left
-  // flip-right
-  // slide-up
-  // slide-down
-  const headerRef = useRef(null);
 
   useEffect(() => {
     const header = headerRef.current;
@@ -59,24 +50,31 @@ function App() {
   }, []);
   return (
     <main className="container">
-      <div ref={headerRef} className="header">
+      <div ref={headerRef} className="header flex-row-space-between">
         <Header sections={sections} />
       </div>
       <Hero />
 
       <section
-        className="projects-section"
+        className="projects-section flex-col-center-center flex-gap-m"
         id={sections.projects}
         data-aos="zoom-in"
       >
         <Projects />
       </section>
       <section
-        className="about-me-section"
+        className="about-me-section flex-col-center-center flex-gap-m"
         id={sections.about}
         data-aos="zoom-in"
       >
         <AboutMe />
+      </section>
+      <section
+        className="education-section flex-col-center-center flex-gap-m"
+        id={sections.aducation}
+        data-aos="zoom-in"
+      >
+        <Aducations />
       </section>
     </main>
   );

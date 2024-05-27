@@ -4,7 +4,7 @@ import "./style.css";
 const AboutMe = () => {
   return (
     <>
-      <h2 className="about-me-titel">About me</h2>
+      <h2>About me</h2>
       <p className="my-description">
         As a final-year Computer Science student specializing in full-stack
         development, I've honed my skills in both client- side and server-side

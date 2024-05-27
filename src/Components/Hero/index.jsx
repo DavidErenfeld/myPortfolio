@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <>
       {/* // <section className="hero-section flex"> */}
-      <div className="details-section">
-        <div className="details-box">
+      <div className="details-section ">
+        <div className="details-box flex-col-center-center">
           <p className="name-details">
             <TextWithAnimation
               text="Hi, I am David Erenfeld"
@@ -22,7 +22,7 @@ const Hero = () => {
             />
           </p>
         </div>
-        <div className="details-buttons-box">
+        <div className="flex-row-center-start flex-gap-s">
           <button className="blu-btn">Downlode CV</button>
           <button>Learn More</button>
         </div>
