@@ -44,4 +44,5 @@ For more information or to reach out, please contact me at:
 
 - **Email:** 1020dudu@gmail.com
 - **LinkedIn:** [Link to my LinkedIn profile](https://www.linkedin.com/in/david-erenfeld?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-  © 2024 All rights reserved to David Erenfeld.
+-  © 2024 All rights reserved to David Erenfeld.
+ 
