@@ -24,18 +24,13 @@
   width: 40%;
   position: relative;
   box-shadow: 0 3px 6px hsl(208, 23%, 50%);
+  border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .timeline-item:hover {
-  padding: 4rem;
-  border-radius: 6px;
-  width: 40%;
-  position: relative;
-  margin: 1rem 0;
   box-shadow: 0 3px 6px hsl(208, 68%, 75%);
-  cursor: pointer;
 }
 
 .timeline-item.left {
@@ -64,7 +59,7 @@
 }
 
 .year {
-  color: #535bf2;
+  color: hsl(237, 86%, 64%);
   font-weight: 700;
   font-size: 2rem;
 }
@@ -73,6 +68,10 @@
   color: hsl(0, 0%, 98%);
   font-weight: 600;
   font-size: 1.6rem;
+}
+
+.year > .course-name:hover {
+  color: hsl(0, 0%, 52%);
 }
 
 .study-place-name {
@@ -90,4 +89,46 @@
 
 .timeline-item:hover .study-place-name {
   font-size: 1.6rem;
+}
+
+/*880*/
+@media (max-width: 55em) {
+  .year {
+    font-size: 1.8rem;
+  }
+
+  .year > .course-name {
+    font-size: 1.4rem;
+  }
+
+  .study-place-name {
+    font-size: 1.2rem;
+  }
+
+  .timeline-item:hover .year {
+    font-size: 2rem;
+  }
+
+  .timeline-item:hover .year > .course-name {
+    font-size: 1.6rem;
+  }
+
+  .timeline-item:hover .study-place-name {
+    font-size: 1.4rem;
+  }
+}
+
+/*768*/
+@media (max-width: 48em) {
+  .timeline {
+    position: relative;
+    margin: 0;
+    padding: 1rem 0;
+  }
+  .timeline-item {
+    width: 50%;
+  }
+  .timeline-item.left {
+    left: 0;
+  }
 }

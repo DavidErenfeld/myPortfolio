@@ -7,7 +7,7 @@ const Header = ({ sections }) => {
         David Erenfeld
       </a>
 
-      <nuv className="flex-row-space-between flex-gap-large">
+      <nuv className=" nuv flex-row-space-between flex-gap-large">
         <h3>
           <a href={`#${sections.about}`}>About Me</a>
         </h3>

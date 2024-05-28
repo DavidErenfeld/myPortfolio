@@ -6,7 +6,7 @@ const Hero = ({ learnMore }) => {
     <>
       <div className="details-section flex-gap-s">
         <div className="details-box flex-col-center-center">
-          <p className="name-details">
+          <p className="hero-name">
             <TextWithAnimation
               text="Hi, I am David Erenfeld"
               baseDelay={500}

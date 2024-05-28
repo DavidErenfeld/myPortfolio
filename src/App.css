@@ -1,6 +1,4 @@
 .header {
-  grid-column: 1/-1;
-  grid-row: 1;
   height: 9.6rem;
   margin: 0rem 2rem 9.6rem 2rem;
   transition: all 0.3s ease-in-out;
@@ -28,4 +26,40 @@
 
 .footer-section {
   margin-top: 16rem;
+}
+
+/*1120*/
+@media (max-width: 70em) {
+  .about-me-section {
+    grid-column: 1/-1;
+  }
+}
+
+/*576*/
+@media (max-width: 36em) {
+  .header.flex-row-space-between.a {
+    margin: 0rem 2rem 9.6rem 2rem;
+  }
+
+  .projects-section,
+  .about-me-section,
+  .skills-section {
+    margin-bottom: 14.8rem;
+  }
+
+  .projects-section {
+    grid-row: 3;
+  }
+
+  .about-me-section {
+    grid-row: 4;
+  }
+
+  .education-section {
+    grid-row: 6;
+  }
+
+  .skills-section {
+    grid-row: 5;
+  }
 }

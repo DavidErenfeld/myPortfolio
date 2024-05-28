@@ -21,7 +21,7 @@ To get this project up and running on your local machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/DavidErenfeld/myPortfolio.git
    ```
 2. Navigate to the project directory:
 
@@ -35,7 +35,7 @@ To get this project up and running on your local machine, follow these steps:
    ```
 4. Start the development server:
 5. ```
-   npm start
+   npm run dev
    ```
 
 ## Contact Information
@@ -44,4 +44,4 @@ For more information or to reach out, please contact me at:
 
 - **Email:** 1020dudu@gmail.com
 - **LinkedIn:** [Link to my LinkedIn profile](https://www.linkedin.com/in/david-erenfeld?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-  © 2024 All rights reserved to David Erenfeld.
+- © 2024 All rights reserved to David Erenfeld.

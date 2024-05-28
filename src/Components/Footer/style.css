@@ -13,7 +13,7 @@
 }
 
 .footer-icons a {
-  color: #535bf2;
+  color: hsl(237, 86%, 64%);
   margin: 0 2rem;
   transition: color 0.3s ease;
 }
@@ -36,4 +36,17 @@
 .footer-icon:hover {
   width: 4.5rem;
   height: 4.5rem;
+}
+
+.footer-icons a {
+  color: hsl(237, 86%, 64%);
+  margin: 0 0.6rem;
+  transition: color 0.3s ease;
+}
+
+/*576*/
+@media (max-width: 36em) {
+  .footer-icons a {
+    margin: 0 0.6rem;
+  }
 }

@@ -2,7 +2,6 @@ import TextWithAnimation from "../TextWithAnimation";
 import "./style.css";
 import {
   FaCode,
-  FaServer,
   FaPuzzlePiece,
   FaSearch,
   FaGraduationCap,
@@ -12,35 +11,35 @@ const AboutMe = () => {
   return (
     <>
       <h2>About Me</h2>
-      <section className="about-me-container ">
+      <section className="about-me-container flex-col-start-center flex-gap-m">
         <p className="about-intro">
           I'm a final-year Computer Science student with a focus on full-stack
           development
         </p>
-        <div className="list-container">
-          <div className="about-box">
+        <div className="about-details flex-col-center-center flex-gap-s">
+          <div className="flex-row-center-start flex-gap-m">
             <FaCode className="about-icon" />
-            <p>
+            <h3>
               Developed strong skills in both client-side and server-side
               programming
-            </p>
+            </h3>
           </div>
-          <div className="about-box">
+          <div className="flex-row-center-start flex-gap-m">
             <FaPuzzlePiece className="about-icon" />
-            <p>Passionate about solving technical challenges</p>
+            <h3>Passionate about solving technical challenges</h3>
           </div>
-          <div className="about-box">
+          <div className="flex-row-center-start flex-gap-m">
             <FaSearch className="about-icon" />
-            <p>
+            <h3>
               Actively seeking opportunities to apply my skills in practical
               settings
-            </p>
+            </h3>
           </div>
-          <div className="about-box">
+          <div className="flex-row-center-start flex-gap-m">
             <FaGraduationCap className="about-icon" />
-            <p>
+            <h3>
               Committed to continuously learning and growing within the field
-            </p>
+            </h3>
           </div>
         </div>
         <p className="about-outro">

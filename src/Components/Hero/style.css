@@ -19,7 +19,7 @@
   margin-bottom: 2rem;
 }
 
-.name-details {
+.hero-name {
   font-size: 5.2rem;
   font-weight: 700;
 }
@@ -30,7 +30,80 @@
 }
 
 .my-img {
-  height: 36rem;
   width: 36rem;
+  height: 36rem;
   border-radius: 50%;
+  /* background-image: url("./imegs/20240528_115526.jpg"); 
+  background-size: cover; 
+  background-position: center; */
+}
+
+/*1120*/
+@media (max-width: 70em) {
+  .hero-name {
+    font-size: 4.4rem;
+  }
+}
+
+/*880*/
+@media (max-width: 55em) {
+  .hero-name {
+    font-size: 3.6rem;
+  }
+
+  .role-details {
+    font-size: 2rem;
+    color: hsl(0, 0%, 52%);
+  }
+
+  .my-img {
+    width: 28rem;
+    height: 28rem;
+  }
+}
+
+/*768*/
+@media (max-width: 48em) {
+  .hero-name {
+    font-size: 2.6rem;
+  }
+
+  .role-details {
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 52%);
+  }
+
+  .my-img {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+
+/*576*/
+@media (max-width: 36em) {
+  .img-section {
+    grid-row: 1;
+    grid-column: 1/-1;
+    margin-bottom: 5.4rem;
+  }
+
+  .details-section {
+    grid-row: 2;
+    grid-column: 1/-1;
+    margin-bottom: 18rem;
+  }
+
+  .hero-name {
+    font-size: 3rem;
+  }
+
+  .role-details {
+    font-size: 2.4rem;
+    color: hsl(0, 0%, 52%);
+  }
+
+  .my-img {
+    width: 28rem;
+    height: 28rem;
+  }
 }

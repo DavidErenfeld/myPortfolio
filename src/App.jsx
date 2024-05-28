@@ -7,6 +7,9 @@ import Projects from "./Components/Projects";
 import Aducations from "./Components/Aducations";
 import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
+import { contactDetails } from "./UserData/MyContact";
+import { myProjects } from "./UserData/MyProjects";
+import { myAducation } from "./UserData/MyAducation";
 
 function App() {
   const headerRef = useRef(null);
@@ -19,6 +22,7 @@ function App() {
   };
 
   useEffect(() => {
+    // Initialize AOS
     AOS.init({
       duration: 1100,
       easing: "ease-in-out",
@@ -26,12 +30,8 @@ function App() {
       mirror: false,
       anchorPlacement: "top-bottom",
     });
-    return () => {
-      AOS.refresh();
-    };
-  }, []);
 
-  useEffect(() => {
+    // Sticky header logic
     const header = headerRef.current;
     if (header) {
       const sticky = header.offsetTop;
@@ -48,14 +48,15 @@ function App() {
 
       return () => {
         window.removeEventListener("scroll", scrollCallback);
+        AOS.refresh();
       };
     }
   }, []);
   return (
     <>
-      <div ref={headerRef} className="header flex-row-space-between">
+      <header ref={headerRef} className="header flex-row-space-between a">
         <Header sections={sections} />
-      </div>
+      </header>
       <main className="container">
         <Hero learnMore={sections.projects} />
         <section
@@ -63,7 +64,7 @@ function App() {
           id={sections.projects}
           data-aos="zoom-in"
         >
-          <Projects />
+          <Projects myProjects={myProjects} />
         </section>
         <section
           className="about-me-section flex-col-center-center flex-gap-m"
@@ -77,7 +78,7 @@ function App() {
           id={sections.aducation}
           data-aos="zoom-in"
         >
-          <Aducations />
+          <Aducations myAducation={myAducation} />
         </section>
         <section
           className="skills-section flex-col-center-center flex-gap-m"
@@ -90,9 +91,8 @@ function App() {
       <section
         className="footer-section flex-col-center-center flex-gap-m"
         id={sections.contact}
-        // data-aos="zoom-in"
       >
-        <Footer />
+        <Footer contactDetails={contactDetails} />
       </section>
     </>
   );

@@ -2,15 +2,11 @@ import "./style.css";
 import WebsiteIcon from "../../Components/Icons/WebsiteIcon";
 import GithubIcon from "../../Components/Icons/GithubIcon";
 
-const ProjectCard = ({
-  projectName,
-  websiteLink,
-  githubLink,
-  technologies,
-}) => {
+const ProjectCard = ({ projectDetails }) => {
+  const { projectName, websiteLink, githubLink, technologies } = projectDetails;
   return (
     <section className="card flex-col-start-start">
-      <h3 className="sub-titel">{projectName}</h3>
+      <p className="sub-titel">{projectName}</p>
       <div className="links flex-col-start-center flex-gap-s">
         <div className="link flex-row-space-between">
           <div>

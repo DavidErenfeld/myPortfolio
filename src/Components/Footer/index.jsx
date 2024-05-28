@@ -1,35 +1,41 @@
 import React from "react";
-import { FaLinkedin, FaEnvelope, FaWhatsapp, FaPhone } from "react-icons/fa";
-import "./style.css"; // Importing the CSS file
+import {
+  FaLinkedin,
+  FaEnvelope,
+  FaWhatsapp,
+  FaPhone,
+  FaGithub,
+} from "react-icons/fa";
+import "./style.css";
 
-const Footer = () => {
+const Footer = ({ contactDetails }) => {
+  const { github, linkedin, email, whatsApp, phonNumber, rights } =
+    contactDetails;
+
   return (
     <footer className="footer-container">
       <div className="footer-icons">
-        <a
-          href="https://www.linkedin.com/in/david-erenfeld?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={`${linkedin}`} target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="footer-icon" />
         </a>
-        <a href="mailto:1020dudu@gmail.com">
+        <a href={`${github}`} target="_blank" rel="noopener noreferrer">
+          <FaGithub className="footer-icon" />
+        </a>
+        <a href={`mailto:${email}`}>
           <FaEnvelope className="footer-icon" />
         </a>
         <a
-          href="https://wa.me/+972503781079"
+          href={`https://wa.me/${whatsApp}`}
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaWhatsapp className="footer-icon" />
         </a>
-        <a href="tel:+972503781079">
+        <a href={`tel:${phonNumber}`}>
           <FaPhone className="footer-icon" />
         </a>
       </div>
-      <p className="footer-text">
-        © 2024 All rights reserved to David Erenfeld
-      </p>
+      <p className="footer-text">© {rights}</p>
     </footer>
   );
 };

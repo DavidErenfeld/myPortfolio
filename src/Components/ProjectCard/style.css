@@ -1,8 +1,8 @@
 .card {
   width: 24rem;
   padding: 2rem;
-  min-width: 30rem;
-  min-height: 34rem;
+  min-width: 28rem;
+  min-height: 32rem;
   border-radius: 9px;
   box-shadow: 0 1px 4.4px rgba(255, 255, 255, 0.2);
   cursor: pointer;
@@ -18,7 +18,8 @@
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 2rem;
-  color: #535bf2;
+  color: hsl(237, 86%, 64%);
+  font-weight: 600;
 }
 
 .description {
@@ -44,11 +45,27 @@
 }
 
 .tech-tag {
-  background-color: #4a4a4a;
+  background-color: hsl(0, 0%, 29%);
   color: hsl(0, 0%, 100%);
   font-size: 1.2rem;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 2px;
   white-space: nowrap;
+}
+
+/*768*/
+@media (max-width: 48em) {
+  .icon {
+    fill: #fff;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/*576*/
+@media (max-width: 36em) {
+  .sub-titel {
+    font-size: 2rem;
+  }
 }
