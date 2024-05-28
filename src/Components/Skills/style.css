@@ -165,7 +165,25 @@
   .others {
     grid-column: 3/-1;
   }
+
   .skills-category::before {
-    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    box-shadow: 0 1px 4.4px rgba(98, 131, 157, 0.212);
+    box-shadow: 0 1px 4.4px rgba(98, 130, 157, 0.662);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: -1;
+  }
+  .skills-category:hover::after {
+    height: 25rem;
+    width: 25rem;
+    box-shadow: 0 1px 4.4px hsl(208, 62%, 72%);
   }
 }

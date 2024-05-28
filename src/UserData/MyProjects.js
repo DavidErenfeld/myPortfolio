@@ -2,7 +2,7 @@ export const myProjects = [
   {
     projectName: "My Portfolio",
     githubLink: "https://github.com/DavidErenfeld/myPortfolio.git",
-    websiteLink: "https://your-website-link",
+    websiteLink: "https://david-erenfeld.netlify.app/",
     technologies: ["Javascript", "React", "HTML", "CSS3"],
   },
   {
