@@ -18,19 +18,22 @@
   font-weight: 400;
   color-scheme: light dark;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(227, 39%, 14%);
+  background-color: hsl(227, 37%, 7%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  width: auto;
 }
 
 body {
+  position: relative;
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
@@ -41,8 +44,8 @@ body {
   top: 0;
   width: -webkit-fill-available;
   padding-right: 5rem;
-  z-index: 1000;
-  background-color: hsl(227, 39%, 14%);
+  z-index: 500;
+  background-color: hsl(227, 37%, 7%);
   margin-bottom: 8rem;
 }
 
@@ -147,7 +150,7 @@ button {
   font-size: 1.4rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: hsl(227, 39%, 14%);
+  background-color: hsl(227, 37%, 7%);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -202,6 +205,14 @@ button.blu-btn:hover {
 
 /*576*/
 @media (max-width: 36em) {
+  :root {
+    background-color: hsl(227, 39%, 14%);
+  }
+
+  .sticky {
+    background-color: hsl(227, 39%, 14%);
+  }
+
   .container {
     margin: 1rem 2rem;
     row-gap: 0;
@@ -222,5 +233,6 @@ button.blu-btn:hover {
 
   button {
     padding: 1.6rem 2.6rem;
+    background-color: hsl(227, 39%, 14%);
   }
 }

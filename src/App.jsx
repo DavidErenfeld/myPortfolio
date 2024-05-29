@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import AboutMe from "./Components/AboutMe";
 import Header from "./Components/Header";
@@ -13,6 +13,7 @@ import { myAducation } from "./UserData/MyAducation";
 
 function App() {
   const headerRef = useRef(null);
+  const [isMobileNavOpen, setMobileNavOpen] = useState(false);
   const sections = {
     about: "about",
     projects: "projects",
@@ -21,6 +22,10 @@ function App() {
     skills: "skills",
   };
 
+  const toggleMobileNav = () => {
+    setMobileNavOpen(!isMobileNavOpen);
+    document.root.style.height = !isMobileNavOpen ? "hidden" : "auto";
+  };
   useEffect(() => {
     // Initialize AOS
     AOS.init({
@@ -52,10 +57,15 @@ function App() {
       };
     }
   }, []);
+
   return (
     <>
       <header ref={headerRef} className="header flex-row-space-between a">
-        <Header sections={sections} />
+        <Header
+          toggleMobileNav={toggleMobileNav}
+          isMobileNavOpen={isMobileNavOpen}
+          sections={sections}
+        />
       </header>
       <main className="container">
         <Hero learnMore={sections.projects} />

@@ -8,7 +8,6 @@ import {
   SiExpress,
   SiCss3,
   SiHtml5,
-  SiJsdelivr,
   SiJavascript,
   SiReact,
 } from "react-icons/si";
