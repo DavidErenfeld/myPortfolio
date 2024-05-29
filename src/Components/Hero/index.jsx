@@ -34,7 +34,8 @@ const Hero = ({ learnMore }) => {
         </div>
       </div>
       <div className="img-section">
-        <img className="my-img" src="./imegs/user.png" alt="my-img" />
+        {/* <img className="my-img" src="./imegs/david.png" alt="my-img" /> */}
+        <div className="my-img"></div>
       </div>
     </>
   );
