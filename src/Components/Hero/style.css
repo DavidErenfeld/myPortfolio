@@ -33,9 +33,7 @@
   width: 36rem;
   height: 36rem;
   border-radius: 50%;
-  background-image: url("./imegs/david.png");
-  background-size: cover;
-  background-position: center;
+  filter: sepia(0.4);
 }
 
 /*1120*/
@@ -103,7 +101,7 @@
   }
 
   .my-img {
-    width: 28rem;
-    height: 28rem;
+    width: 32rem;
+    height: 32rem;
   }
 }

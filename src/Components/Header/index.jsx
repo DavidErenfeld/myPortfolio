@@ -26,7 +26,7 @@ const Header = ({ sections, toggleMobileNav, isMobileNavOpen }) => {
 
   return (
     <>
-      <a className="my-name" href="#myName">
+      <a className="my-name" href="#">
         David Erenfeld
       </a>
       <nav className="nav flex-row-space-between flex-gap-large">

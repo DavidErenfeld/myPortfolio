@@ -15,6 +15,7 @@ function App() {
   const headerRef = useRef(null);
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);
   const sections = {
+    hero: "hero",
     about: "about",
     projects: "projects",
     contact: "contact",
@@ -64,11 +65,11 @@ function App() {
         <Header
           toggleMobileNav={toggleMobileNav}
           isMobileNavOpen={isMobileNavOpen}
-          sections={sections}
+          sections="#"
         />
       </header>
       <main className="container">
-        <Hero learnMore={sections.projects} />
+        <Hero learnMore={sections.hero} />
         <section
           className="projects-section flex-col-center-center flex-gap-m"
           id={sections.projects}

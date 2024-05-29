@@ -20,7 +20,7 @@ export const myProjects = [
   },
   {
     projectName: "Pig game",
-    githubLink: "https://github.com/DavidErenfeld/pig-game.git",
+    githubLink: "https://github.com/DavidErenfeld/Pig-Game.git",
     websiteLink: "https://tranquil-syrniki-b95ab5.netlify.app/",
     technologies: ["HTML", "CSS3", "Javascript"],
   },
