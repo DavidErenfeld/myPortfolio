@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./style.css";
 import { MdMenu } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
@@ -26,10 +26,10 @@ const Header = ({ sections, toggleMobileNav, isMobileNavOpen }) => {
 
   return (
     <>
-      <a className="my-name" href="#">
+      <a className="my-name" href="">
         David Erenfeld
       </a>
-      <nav className="nav flex-row-space-between flex-gap-large">
+      <nav className={`nav flex-row-space-between flex-gap-large `}>
         <h3>
           <a href={`#${sections.about}`}>About Me</a>
         </h3>
@@ -46,7 +46,9 @@ const Header = ({ sections, toggleMobileNav, isMobileNavOpen }) => {
           <a href={`#${sections.contact}`}>Contact</a>
         </h3>
       </nav>
+
       <MdMenu className="nav-mobile-icon" onClick={toggleMobileNav} />
+
       {isMobileNavOpen || !animationComplete ? (
         <motion.nav
           className="nav-mobile"

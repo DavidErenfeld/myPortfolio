@@ -26,7 +26,7 @@
 
 .role-details {
   font-size: 2.4rem;
-  color: hsl(0, 0%, 52%);
+  color: var(--dark-gray);
 }
 
 .my-img {
@@ -34,6 +34,7 @@
   height: 36rem;
   border-radius: 50%;
   filter: sepia(0.4);
+  border: solid 5px hsl(207, 67%, 76%);
 }
 
 /*1120*/
@@ -51,7 +52,7 @@
 
   .role-details {
     font-size: 2rem;
-    color: hsl(0, 0%, 52%);
+    color: var(--dark-gray);
   }
 
   .my-img {
@@ -68,7 +69,6 @@
 
   .role-details {
     font-size: 1.8rem;
-    color: hsl(0, 0%, 52%);
   }
 
   .my-img {
@@ -97,7 +97,6 @@
 
   .role-details {
     font-size: 2.4rem;
-    color: hsl(0, 0%, 52%);
   }
 
   .my-img {

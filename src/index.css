@@ -13,17 +13,60 @@
 }
 
 :root {
+  /* Fonts and text settings */
   font-family: "Poppins", sans-serif;
-  line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(227, 37%, 7%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* General settings and base colors */
+  line-height: 1.5;
+  color-scheme: light dark;
   overflow-x: hidden;
+  --main-text-color: hsl(0, 0%, 100%);
+  --main-background-color: hsl(227, 37%, 7%);
+  --border-color: hsl(0, 0%, 100%);
+
+  /* Hover states and effects */
+  --hover-main-background-color: hsl(0, 0%, 100%);
+  --hover-text-color: hsl(227, 37%, 7%);
+  --light-box-shadow: 0 1px 4.4px rgba(98, 131, 157, 0.486);
+  --dark-box-shadow: 0 10px 20px rgba(60, 60, 60, 0.3);
+
+  /* Additional colors */
+  --blu-background-color: hsl(237, 86%, 64%);
+  --blu-border-color: hsl(237, 86%, 64%);
+  --dark-blu: hsl(237, 88%, 56%);
+  --light-blu: hsl(208, 69%, 75%);
+  --gray-background: hsl(0, 0%, 29%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --timeline-dark-color: hsl(208, 23%, 50%);
+  --timeline-light-color: hsl(208, 62%, 72%);
+  --footer-background-color: hsl(227, 37%, 7%);
+  --main-mobile-background-color: hsl(226, 39%, 19%);
+}
+
+[data-theme="light"] {
+  /* Base colors for the light theme */
+  --main-text-color: hsl(240, 100%, 25%);
+  --main-background-color: hsl(0, 0%, 100%);
+  --main-mobile-background-color: hsl(0, 0%, 100%);
+  --border-color: hsl(237, 70%, 17%);
+  --footer-background-color: hsla(0, 3%, 92%, 0.916);
+
+  /* Hover states and effects for the light theme */
+  --hover-main-background-color: hsl(237, 70%, 17%);
+  --hover-text-color: hsl(0, 0%, 100%);
+  --light-box-shadow: 0 1px 4.4px rgba(104, 103, 103, 0.4);
+  --dark-box-shadow: 0 10px 20px rgba(60, 60, 60, 0.3);
+
+  /* Additional colors in the light theme */
+  --dark-blu: hsl(237, 88%, 56%);
+  --light-blu: hsl(237, 100%, 65%);
+  --gray-background: hsl(0, 5%, 88%);
+  --dark-gray: hsl(0, 1%, 22%);
 }
 
 html {
@@ -36,22 +79,15 @@ body {
   position: relative;
   margin: 0;
   min-height: 100vh;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
   overflow-x: hidden;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: -webkit-fill-available;
-  padding-right: 5rem;
-  z-index: 500;
-  background-color: hsl(227, 37%, 7%);
-  margin-bottom: 8rem;
+section {
+  scroll-margin-top: 24rem;
 }
 
-section {
-  scroll-margin-top: 9.6rem;
-}
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -118,15 +154,15 @@ h1 {
 
 h2 {
   font-size: 3.4rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
-  color: hsl(237, 86%, 64%);
+  color: var(--dark-blu);
 }
 
 h3 {
   font-size: 1.8rem;
   font-weight: 500;
-  color: hsl(208, 68%, 75%);
+  color: var(--light-blu);
 }
 
 p {
@@ -135,47 +171,44 @@ p {
 
 a {
   font-weight: 500;
-  color: hsl(0, 0%, 100%);
+  color: var(--main-text-color);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: hsl(237, 86%, 64%);
+  color: var(--dark-blu);
 }
 
 button {
-  border: solid 1px hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 100%);
+  border: solid 1px var(--border-color);
+  color: var(--main-text-color);
   padding: 1rem 2.2rem;
   font-size: 1.4rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: hsl(227, 37%, 7%);
+  background-color: var(--main-background-color);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  background-color: hsl(0, 0%, 100%);
-  color: #242424;
+  background-color: var(--hover-main-background-color);
+  color: var(--hover-text-color);
   border: none;
 }
 
 button.blu-btn {
-  background-color: hsl(237, 86%, 64%);
-  border: solid 1px hsl(237, 86%, 64%);
+  background-color: var(--blu-background-color);
+  border: solid 1px var(--blu-border-color);
 }
 
 button.blu-btn:hover {
-  background-color: hsl(0, 0%, 100%);
-  border: solid 1px hsl(0, 0%, 100%);
+  background-color: var(--hover-main-background-color);
+  border: solid 1px var(--border-color);
 }
 
 /*960*/
 @media (max-width: 60em) {
-  .sticky {
-    padding-right: 0rem;
-  }
   .flex-gap-large {
     gap: 4rem;
   }
@@ -205,12 +238,8 @@ button.blu-btn:hover {
 
 /*576*/
 @media (max-width: 36em) {
-  :root {
-    background-color: hsl(227, 39%, 14%);
-  }
-
-  .sticky {
-    background-color: hsl(227, 39%, 14%);
+  #root {
+    background-color: var(--main-mobile-background-color);
   }
 
   .container {
@@ -224,7 +253,7 @@ button.blu-btn:hover {
 
   h2 {
     margin-bottom: 2rem;
-    color: #fff;
+    color: var(--main-text-color);
   }
 
   h3 {
@@ -233,6 +262,6 @@ button.blu-btn:hover {
 
   button {
     padding: 1.6rem 2.6rem;
-    background-color: hsl(227, 39%, 14%);
+    background-color: var(--main-mobile-background-color);
   }
 }

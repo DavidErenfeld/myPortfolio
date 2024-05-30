@@ -1,7 +1,40 @@
+.sun-icon,
+.moon-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  fill: var(--main-text-color);
+  z-index: 1000;
+}
+
+.sun-icon:hover,
+.moon-icon:hover {
+  fill: var(--dark-blu);
+}
+
+header {
+  position: relative;
+}
+
 .header {
-  height: 9.6rem;
-  margin: 0rem 2rem 9.6rem 2rem;
+  padding: 2rem 8rem 9.6rem 2rem;
   transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  z-index: 500;
+  background-color: var(--main-background-color);
+  padding: 2rem 8rem 2rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-toggle-icon {
+  position: absolute;
+  top: 3.2rem;
+  right: 2rem;
 }
 
 .projects-section {
@@ -33,12 +66,29 @@
   .about-me-section {
     grid-column: 1/-1;
   }
+  .sun-icon,
+  .moon-icon {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 
 /*576*/
 @media (max-width: 36em) {
-  .header.flex-row-space-between.a {
-    margin: 0rem 2rem 9.6rem 2rem;
+  .sticky {
+    background-color: var(--main-mobile-background-color);
+  }
+
+  .theme-toggle-icon {
+    position: absolute;
+    right: 8.9rem;
+    top: 3.2rem;
+  }
+
+  .sun-icon,
+  .moon-icon {
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   .projects-section,

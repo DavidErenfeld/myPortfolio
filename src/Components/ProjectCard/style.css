@@ -2,23 +2,23 @@
   width: 24rem;
   padding: 2rem;
   min-width: 28rem;
-  min-height: 32rem;
+  min-height: 34rem;
   border-radius: 9px;
-  box-shadow: 0 1px 4.4px rgba(255, 255, 255, 0.2);
+  box-shadow: var(--light-box-shadow);
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(60, 60, 60, 0.3);
+  box-shadow: var(--dark-box-shadow);
 }
 
 .sub-titel {
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 4rem;
-  color: hsl(237, 86%, 64%);
+  color: var(--dark-blu);
   font-weight: 600;
 }
 
@@ -39,14 +39,14 @@
 }
 
 .icon {
-  fill: #fff;
+  fill: var(--main-text-color);
   height: 2.5rem;
   width: 2.5rem;
 }
 
 .tech-tag {
-  background-color: hsl(0, 0%, 29%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--gray-background);
+  color: var(--main-text-color);
   font-size: 1.2rem;
   padding: 5px 10px;
   border-radius: 5px;
@@ -57,7 +57,6 @@
 /*768*/
 @media (max-width: 48em) {
   .icon {
-    fill: #fff;
     height: 3rem;
     width: 3rem;
   }
@@ -65,10 +64,6 @@
 
 /*576*/
 @media (max-width: 36em) {
-  .card {
-    background-color: hsl(227, 37%, 7%);
-  }
-
   .sub-titel {
     font-size: 2rem;
   }

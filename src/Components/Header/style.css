@@ -4,12 +4,8 @@ a.my-name {
   cursor: pointer;
 }
 
-a.my-name:hover {
-  color: hsl(0, 0%, 100%);
-}
-
 .nav > h3 > a {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .nav-mobile-icon,
@@ -29,6 +25,10 @@ a.my-name:hover {
     font-weight: 600;
     cursor: pointer;
   }
+
+  .nav > h3 > a {
+    font-size: 1.4rem;
+  }
 }
 
 /*576*/
@@ -40,18 +40,21 @@ a.my-name:hover {
   .nav-mobile-icon-close {
     display: none;
   }
+
   .nav-mobile-icon,
   .close-nav-mobile-icon {
     display: inline-block;
     height: 4rem;
     width: 4rem;
-    color: hsl(0, 0%, 100%);
+    color: var(--main-text-color);
+    cursor: pointer;
   }
 
+  .nav-mobile-icon,
   .close-nav-mobile-icon {
     position: absolute;
-    top: 3rem;
-    right: 3rem;
+    top: 2.4rem;
+    right: 2.4rem;
   }
 
   .nav-mobile {
@@ -73,7 +76,7 @@ a.my-name:hover {
   }
 
   .nav-mobile > h3 > a {
-    color: hsl(0, 0%, 96%);
+    color: var(--main-text-color);
     font-size: 2.6rem;
     font-weight: 700;
   }

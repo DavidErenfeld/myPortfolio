@@ -1,6 +1,6 @@
 .footer-container {
-  background-color: #0b0e19;
-  color: hsl(0, 0%, 100%);
+  background-color: var(--footer-background-color);
+  color: var(--main-text-color);
   padding: 20px;
   text-align: center;
   margin-top: 9rem;
@@ -13,35 +13,28 @@
 }
 
 .footer-icons a {
-  color: hsl(237, 86%, 64%);
-  margin: 0 2rem;
+  color: var(--dark-blu);
+  margin: 0 0.6rem;
   transition: color 0.3s ease;
-}
-
-.footer-icons a:hover {
-  color: hsl(0, 0%, 52%);
 }
 
 .footer-icon {
   margin: 0 0.5rem;
   width: 4rem;
   height: 4rem;
-}
-
-.footer-text {
-  font-size: 1.8rem;
-  margin: 2rem 0;
+  fill: var(--main-text-color);
 }
 
 .footer-icon:hover {
   width: 4.5rem;
   height: 4.5rem;
+  fill: var(--light-blu);
 }
 
-.footer-icons a {
-  color: hsl(237, 86%, 64%);
-  margin: 0 0.6rem;
-  transition: color 0.3s ease;
+.footer-text {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  color: var(--light-blu);
 }
 
 /*576*/

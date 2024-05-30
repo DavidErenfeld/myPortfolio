@@ -23,7 +23,7 @@ const Hero = ({ learnMore }) => {
         </div>
         <div className="flex-row-center-start flex-gap-s">
           <a
-            href="./myResume/DavidErenfeld.pdf"
+            href="./myResume/DavidErenfeld-CV.pdf"
             download="David_Erenfeld_Resume.pdf"
           >
             <button className="blu-btn">Downlode CV</button>
@@ -35,7 +35,6 @@ const Hero = ({ learnMore }) => {
       </div>
       <div className="img-section">
         <img className="my-img" src="./imegs/profile.png" alt="my-img" />
-        {/* <div className="my-img"></div> */}
       </div>
     </>
   );

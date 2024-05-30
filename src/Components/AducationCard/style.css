@@ -12,7 +12,7 @@
   content: "";
   position: absolute;
   width: 0.6rem;
-  background-color: hsl(208, 23%, 50%);
+  background-color: var(--timeline-dark-color);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -23,14 +23,14 @@
   padding: 2rem;
   width: 40%;
   position: relative;
-  box-shadow: 0 3px 6px hsl(208, 23%, 50%);
+  box-shadow: 0 3px 6px var(--timeline-dark-color);
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .timeline-item:hover {
-  box-shadow: 0 3px 6px hsl(208, 68%, 75%);
+  box-shadow: 0 3px 6px var(--timeline-light-color);
 }
 
 .timeline-item.left {
@@ -48,8 +48,8 @@
   height: 2rem;
   right: -1.3rem;
   top: 1.5rem;
-  background-color: hsl(208, 62%, 72%);
-  border: 2px solid hsl(208, 23%, 50%);
+  background-color: var(--timeline-light-color);
+  border: 2px solid var(--timeline-dark-color);
   border-radius: 50%;
   z-index: 1;
 }
@@ -59,23 +59,19 @@
 }
 
 .year {
-  color: hsl(237, 86%, 64%);
+  color: var(--dark-blu);
   font-weight: 700;
   font-size: 2rem;
 }
 
 .year > .course-name {
-  color: hsl(0, 0%, 98%);
+  color: var(--main-text-color);
   font-weight: 600;
   font-size: 1.6rem;
 }
 
-.year > .course-name:hover {
-  color: hsl(0, 0%, 52%);
-}
-
 .study-place-name {
-  color: hsl(0, 0%, 52%);
+  color: var(--dark-gray);
   font-size: 1.4rem;
 }
 

@@ -8,7 +8,7 @@
 }
 
 .about-intro {
-  color: hsl(0, 100%, 100%);
+  color: var(--main-text-color);
   font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
@@ -17,12 +17,12 @@
 .about-icon {
   height: 3rem;
   width: 3rem;
-  color: hsl(237, 86%, 64%);
+  color: var(--dark-blu);
 }
 
 .about-outro {
   text-align: center;
-  color: hsl(0, 100%, 100%);
+  color: var(--main-text-color);
   font-weight: 500;
   letter-spacing: 0.2px;
 }

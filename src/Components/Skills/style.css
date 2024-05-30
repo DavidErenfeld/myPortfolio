@@ -31,9 +31,14 @@
 }
 
 .skills-category > p {
-  color: hsl(237, 86%, 64%);
+  color: var(--light-blu);
   font-size: 2.4rem;
   font-weight: 600;
+}
+
+.skills-category:hover p {
+  color: var(--dark-blu);
+  font-size: 2.8rem;
 }
 
 .icons-container {
@@ -49,7 +54,7 @@
   height: 30rem;
   width: 30rem;
   border-radius: 50%;
-  box-shadow: 0 1px 4.4px rgba(98, 130, 157, 0.662);
+  box-shadow: var(--dark-box-shadow);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   z-index: -2;
@@ -64,7 +69,7 @@
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
-  box-shadow: 0 1px 4.4px rgba(98, 131, 157, 0.212);
+  box-shadow: var(--light-box-shadow);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   z-index: -1;
@@ -79,23 +84,18 @@
 .skills-category:hover::after {
   height: 32rem;
   width: 32rem;
-  box-shadow: 0 1px 4.4px hsl(208, 62%, 72%);
+  box-shadow: var(--light-box-shadow);
 }
 
 .skills-category:hover::before {
   height: 22rem;
   width: 22rem;
-  box-shadow: 0 1px 4.4px rgba(98, 131, 157, 0.486);
+  box-shadow: var(--light-box-shadow);
 }
 
 .skills-category:hover .skill-icon {
   width: 5.5rem;
   height: 5.5rem;
-}
-
-.skills-category:hover p {
-  color: hsl(208, 62%, 72%);
-  font-size: 2.8rem;
 }
 
 .html {
@@ -120,7 +120,7 @@
   color: #47a248;
 }
 .express {
-  color: #ffffff;
+  color: var(--main-text-color);
 }
 .jest {
   color: #c21325;
@@ -166,24 +166,12 @@
     grid-column: 3/-1;
   }
 
-  .skills-category::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 25rem;
-    width: 25rem;
-    border-radius: 50%;
-    box-shadow: 0 1px 4.4px rgba(98, 131, 157, 0.212);
-    box-shadow: 0 1px 4.4px rgba(98, 130, 157, 0.662);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    z-index: -1;
+  .skills-category:hover .skill-icon {
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  .skills-category:hover::after {
-    height: 25rem;
-    width: 25rem;
-    box-shadow: 0 1px 4.4px hsl(208, 62%, 72%);
+
+  .skills-category::before {
+    display: none;
   }
 }

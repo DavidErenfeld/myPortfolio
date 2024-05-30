@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import "./App.css";
 import AboutMe from "./Components/AboutMe";
 import Header from "./Components/Header";
@@ -10,10 +10,13 @@ import Footer from "./Components/Footer";
 import { contactDetails } from "./UserData/MyContact";
 import { myProjects } from "./UserData/MyProjects";
 import { myAducation } from "./UserData/MyAducation";
+import ThemeToggle from "./Components/ThemeToggle";
 
+export const ThemeContext = React.createContext();
 function App() {
   const headerRef = useRef(null);
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);
+  const [theme, setTheme] = useState("dark");
   const sections = {
     hero: "hero",
     about: "about",
@@ -21,6 +24,10 @@ function App() {
     contact: "contact",
     aducation: "aducation",
     skills: "skills",
+  };
+
+  const toggleTheme = () => {
+    setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
   };
 
   const toggleMobileNav = () => {
@@ -45,8 +52,10 @@ function App() {
       const scrollCallback = () => {
         if (window.pageYOffset > sticky) {
           header.classList.add("sticky");
+          header.classList.remove("header");
         } else {
           header.classList.remove("sticky");
+          header.classList.add("header");
         }
       };
 
@@ -59,17 +68,27 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    root.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
-    <>
-      <header ref={headerRef} className="header flex-row-space-between a">
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <header ref={headerRef} className="header flex-row-space-between ">
+        <div className="theme-toggle-icon">
+          <ThemeToggle />
+        </div>
         <Header
+          toggleTheme={toggleTheme}
           toggleMobileNav={toggleMobileNav}
           isMobileNavOpen={isMobileNavOpen}
-          sections="#"
+          sections={sections}
         />
       </header>
+
       <main className="container">
-        <Hero learnMore={sections.hero} />
+        <Hero learnMore={sections.about} />
         <section
           className="projects-section flex-col-center-center flex-gap-m"
           id={sections.projects}
@@ -105,7 +124,7 @@ function App() {
       >
         <Footer contactDetails={contactDetails} />
       </section>
-    </>
+    </ThemeContext.Provider>
   );
 }
 
