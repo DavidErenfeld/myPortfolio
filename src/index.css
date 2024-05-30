@@ -200,6 +200,7 @@ button:hover {
 button.blu-btn {
   background-color: var(--blu-background-color);
   border: solid 1px var(--blu-border-color);
+  color: var(--hover-text-color);
 }
 
 button.blu-btn:hover {
