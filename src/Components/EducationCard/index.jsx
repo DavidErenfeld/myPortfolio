@@ -1,6 +1,6 @@
 import "./style.css";
 
-const AducationCard = ({ educationDetails }) => {
+const EducationCard = ({ educationDetails }) => {
   const { siteStyle, year, courseName, studyPlaceName, courseLink } =
     educationDetails;
   return (
@@ -19,4 +19,4 @@ const AducationCard = ({ educationDetails }) => {
     </>
   );
 };
-export default AducationCard;
+export default EducationCard;

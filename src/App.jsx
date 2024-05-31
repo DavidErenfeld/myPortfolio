@@ -4,12 +4,12 @@ import AboutMe from "./Components/AboutMe";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
-import Aducations from "./Components/Aducations";
+import Educations from "./Components/Educations";
 import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 import { contactDetails } from "./UserData/MyContact";
 import { myProjects } from "./UserData/MyProjects";
-import { myAducation } from "./UserData/MyAducation";
+import { myEducation } from "./UserData/MyEducation";
 import ThemeToggle from "./Components/ThemeToggle";
 
 export const ThemeContext = React.createContext();
@@ -18,11 +18,10 @@ function App() {
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);
   const [theme, setTheme] = useState("dark");
   const sections = {
-    hero: "hero",
     about: "about",
     projects: "projects",
     contact: "contact",
-    aducation: "aducation",
+    education: "Education",
     skills: "skills",
   };
 
@@ -105,10 +104,10 @@ function App() {
         </section>
         <section
           className="education-section flex-col-center-center flex-gap-m"
-          id={sections.aducation}
+          id={sections.education}
           data-aos="zoom-in"
         >
-          <Aducations myAducation={myAducation} />
+          <Educations myEducation={myEducation} />
         </section>
         <section
           className="skills-section flex-col-center-center flex-gap-m"

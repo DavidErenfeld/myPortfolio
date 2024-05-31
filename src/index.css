@@ -25,46 +25,46 @@
   line-height: 1.5;
   color-scheme: light dark;
   overflow-x: hidden;
-  --main-text-color: hsl(0, 0%, 100%);
-  --main-background-color: hsl(227, 37%, 7%);
-  --border-color: hsl(0, 0%, 100%);
+  --main-text-color: #e0f2fe;
+  --main-background-color: #082f49;
+  --border-color: #e0f2fe;
 
   /* Hover states and effects */
-  --hover-main-background-color: hsl(0, 0%, 100%);
-  --hover-text-color: hsl(227, 37%, 7%);
-  --light-box-shadow: 0 1px 4.4px rgba(98, 131, 157, 0.486);
-  --dark-box-shadow: 0 10px 20px rgba(60, 60, 60, 0.3);
+  --hover-main-background-color: #bae6fd;
+  --hover-text-color: #082f49;
+  --light-box-shadow: 0 1px 4.4px 0.1px #38bdf8;
+  --dark-box-shadow: 0.1px 2px 8px 0.1px #7dd3fc;
 
   /* Additional colors */
-  --blu-background-color: hsl(237, 86%, 64%);
-  --blu-border-color: hsl(237, 86%, 64%);
-  --dark-blu: hsl(237, 88%, 56%);
-  --light-blu: hsl(208, 69%, 75%);
-  --gray-background: hsl(0, 0%, 29%);
-  --dark-gray: hsl(0, 0%, 52%);
-  --timeline-dark-color: hsl(208, 23%, 50%);
-  --timeline-light-color: hsl(208, 62%, 72%);
-  --footer-background-color: hsl(227, 37%, 7%);
-  --main-mobile-background-color: hsl(226, 39%, 19%);
+  --blu-background-color: #0284c7;
+  --blu-border-color: #0284c7;
+
+  --dark-blu: #0ea5e9;
+  --light-blu: #00a8ff;
+  --gray-background: #4a4a4a;
+  --dark-gray: #858585;
+  --timeline-dark-color: #718093;
+  --timeline-light-color: #dcdde1;
+  --footer-background-color: #0b0e18;
+  --main-mobile-background-color: #1e2643;
 }
 
 [data-theme="light"] {
   /* Base colors for the light theme */
-  --main-text-color: hsl(240, 100%, 25%);
+  --main-text-color: #075985; /*/*/
   --main-background-color: hsl(0, 0%, 100%);
   --main-mobile-background-color: hsl(0, 0%, 100%);
-  --border-color: hsl(237, 70%, 17%);
+  --border-color: #075985;
   --footer-background-color: hsla(0, 3%, 92%, 0.916);
 
   /* Hover states and effects for the light theme */
-  --hover-main-background-color: hsl(237, 70%, 17%);
-  --hover-text-color: hsl(0, 0%, 100%);
+  --hover-main-background-color: #075985
+  --hover-text-color: #0369a1;
   --light-box-shadow: 0 1px 4.4px rgba(104, 103, 103, 0.4);
   --dark-box-shadow: 0 10px 20px rgba(60, 60, 60, 0.3);
 
   /* Additional colors in the light theme */
-  --dark-blu: hsl(237, 88%, 56%);
-  --light-blu: hsl(237, 100%, 65%);
+
   --gray-background: hsl(0, 5%, 88%);
   --dark-gray: hsl(0, 1%, 22%);
 }
@@ -200,12 +200,13 @@ button:hover {
 button.blu-btn {
   background-color: var(--blu-background-color);
   border: solid 1px var(--blu-border-color);
-  color: var(--hover-text-color);
+  color: hsl(0, 0%, 100%);
 }
 
 button.blu-btn:hover {
   background-color: var(--hover-main-background-color);
   border: solid 1px var(--border-color);
+  color: var(--hover-text-color);
 }
 
 /*960*/

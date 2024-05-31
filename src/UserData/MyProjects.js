@@ -10,7 +10,14 @@ export const myProjects = [
     githubLink: "https://github.com/DavidErenfeld/Travel-Easily-Server.git",
     websiteLink:
       "https://enigmatic-island-56921-258869278475.herokuapp.com/api-docs/",
-    technologies: ["Typescript", "NodeJS", "MongoDB", "Jest", "Swagger"],
+    technologies: [
+      "Typescript",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "Jest",
+      "Swagger",
+    ],
   },
   {
     projectName: "Travel easily front",

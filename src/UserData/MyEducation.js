@@ -1,4 +1,4 @@
-export const myAducation = [
+export const myEducation = [
   {
     siteStyle: "right",
     year: "2021 - 2024",

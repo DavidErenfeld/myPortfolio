@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { MdMenu } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
@@ -37,7 +37,7 @@ const Header = ({ sections, toggleMobileNav, isMobileNavOpen }) => {
           <a href={`#${sections.projects}`}>Projects</a>
         </h3>
         <h3>
-          <a href={`#${sections.aducation}`}>Aducation</a>
+          <a href={`#${sections.education}`}>Education</a>
         </h3>
         <h3>
           <a href={`#${sections.skills}`}>Skills</a>
@@ -72,8 +72,8 @@ const Header = ({ sections, toggleMobileNav, isMobileNavOpen }) => {
             </a>
           </h3>
           <h3>
-            <a href={`#${sections.aducation}`} onClick={toggleMobileNav}>
-              Aducation
+            <a href={`#${sections.education}`} onClick={toggleMobileNav}>
+              Education
             </a>
           </h3>
           <h3>

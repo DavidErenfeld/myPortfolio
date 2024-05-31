@@ -6,20 +6,20 @@ const Hero = ({ learnMore }) => {
     <>
       <div className="details-section flex-gap-s">
         <div className="details-box flex-col-center-center">
-          <p className="hero-name">
+          <div className="hero-name">
             <TextWithAnimation
               text="Hi, I am David Erenfeld"
               baseDelay={500}
               delayIncrement={100}
             />
-          </p>
-          <p className="role-details">
+          </div>
+          <div className="role-details">
             <TextWithAnimation
               text="Full-stack Developer"
               baseDelay={1000}
               delayIncrement={100}
             />
-          </p>
+          </div>
         </div>
         <div className="flex-row-center-start flex-gap-s">
           <a
