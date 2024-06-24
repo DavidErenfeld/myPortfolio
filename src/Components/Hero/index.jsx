@@ -23,7 +23,7 @@ const Hero = ({ learnMore }) => {
         </div>
         <div className="flex-row-center-start flex-gap-s">
           <a
-            href="./myResume/DavidErenfeld-CV.pdf"
+            href="./myResume/David_Erenfeld_Resume.pdf"
             download="David_Erenfeld_Resume.pdf"
           >
             <button className="blu-btn">Downlode CV</button>

@@ -3,7 +3,7 @@ export const myProjects = [
     projectName: "My Portfolio",
     githubLink: "https://github.com/DavidErenfeld/myPortfolio.git",
     websiteLink: "https://david-erenfeld.netlify.app/",
-    technologies: ["Javascript", "React", "HTML", "CSS3"],
+    technologies: ["Javascript", "React", "HTML", "CSS"],
   },
   {
     projectName: "Travel easily server",
@@ -23,12 +23,12 @@ export const myProjects = [
     projectName: "Travel easily front",
     githubLink: "https://github.com/DavidErenfeld/Travel-Easily-Front.git",
     websiteLink: "https://travel-easily.netlify.app/",
-    technologies: ["Typescript", "React", "HTML", "CSS3"],
+    technologies: ["Typescript", "React", "HTML", "CSS"],
   },
   {
     projectName: "Pig game",
     githubLink: "https://github.com/DavidErenfeld/Pig-Game.git",
     websiteLink: "https://tranquil-syrniki-b95ab5.netlify.app/",
-    technologies: ["HTML", "CSS3", "Javascript"],
+    technologies: ["HTML", "CSS", "Javascript"],
   },
 ];
