@@ -3,14 +3,7 @@ export const myProjects = [
     projectName: "Code Mentor front",
     githubLink: "https://github.com/DavidErenfeld/Code_Mentor_Front.git",
     websiteLink: "https://codementor-daviderenfeld.netlify.app/",
-    technologies: [
-      "JavaScript",
-      "React",
-      "CSS",
-      "HTML",
-      "MongoDB",
-      "Socket.IO",
-    ],
+    technologies: ["React", "JavaScript", "CSS", "HTML", "Socket.IO"],
   },
   {
     projectName: "Code Mentor server",
