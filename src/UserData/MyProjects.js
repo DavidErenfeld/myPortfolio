@@ -16,7 +16,7 @@ export const myProjects = [
     projectName: "Travel easily front",
     githubLink: "https://github.com/DavidErenfeld/Travel-Easily-Front.git",
     websiteLink: "https://travel-easily.netlify.app/",
-    technologies: ["TypeScript", "React", "HTML", "CSS"],
+    technologies: ["React", "TypeScript", "HTML", "CSS"],
   },
   {
     projectName: "Travel easily server",

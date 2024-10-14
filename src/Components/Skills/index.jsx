@@ -10,6 +10,7 @@ import {
   SiHtml5,
   SiJavascript,
   SiReact,
+  SiSocketdotio,
 } from "react-icons/si";
 import "./style.css";
 
@@ -21,14 +22,15 @@ const Skills = () => {
         <div className="skills-category backend">
           <p>Backend</p>
           <div className="icons-container flex-row-space-between">
-            <SiReact className="skill-icon react" />
             <FaNode className="skill-icon node" />
             <SiExpress className="skill-icon express" />
+            <SiSocketdotio className="skill-icon socketio" />
           </div>
         </div>
         <div className="skills-category frontend">
           <p>Frontend</p>
           <div className="icons-container flex-row-space-between">
+            <SiReact className="skill-icon react" />
             <SiHtml5 className="skill-icon html" />
             <SiCss3 className="skill-icon css" />
             <SiJavascript className="skill-icon javascript" />
