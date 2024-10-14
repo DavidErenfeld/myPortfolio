@@ -1,5 +1,17 @@
 export const myProjects = [
   {
+    projectName: "Starbuks Locations front",
+    githubLink: "https://github.com/DavidErenfeld/Task_Locations.git",
+    websiteLink: "https://task-locations-david-erenfeld.netlify.app/",
+    technologies: ["React", "JavaScript", "CSS", "OpenLayers"],
+  },
+  {
+    projectName: "Starbuks Locations server",
+    githubLink: "https://github.com/DavidErenfeld/Geo-Location-Service.git",
+    websiteLink: "https://geo-location-service-b0911ef2477e.herokuapp.com/",
+    technologies: ["NodeJS", "JavaScript", "Express", "Turf.js", "Docker"],
+  },
+  {
     projectName: "Code Mentor front",
     githubLink: "https://github.com/DavidErenfeld/Code_Mentor_Front.git",
     websiteLink: "https://codementor-daviderenfeld.netlify.app/",
@@ -11,18 +23,6 @@ export const myProjects = [
     websiteLink:
       "https://boiling-springs-91338-006b899baec7.herokuapp.com/codeBlocks",
     technologies: ["NodeJS", "JavaScript", "Express", "MongoDB", "Socket.IO"],
-  },
-  {
-    projectName: "Starbuks Locations front",
-    githubLink: "https://github.com/DavidErenfeld/Task_Locations.git",
-    websiteLink: "https://task-locations-david-erenfeld.netlify.app/",
-    technologies: ["React", "JavaScript", "CSS", "OpenLayers"],
-  },
-  {
-    projectName: "Starbuks Locations server",
-    githubLink: "https://github.com/DavidErenfeld/Geo-Location-Service.git",
-    websiteLink: "https://geo-location-service-b0911ef2477e.herokuapp.com/",
-    technologies: ["NodeJS", "JavaScript", "Express", "Turf.js", "Docker"],
   },
   {
     projectName: "Travel easily front",
