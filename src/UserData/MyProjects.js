@@ -3,20 +3,32 @@ export const myProjects = [
     projectName: "Code Mentor front",
     githubLink: "https://github.com/DavidErenfeld/Code_Mentor_Front.git",
     websiteLink: "https://codementor-daviderenfeld.netlify.app/",
-    technologies: ["React", "JavaScript", "CSS", "HTML", "Socket.IO"],
+    technologies: ["JavaScript", "React", "CSS", "HTML", "Socket.IO"],
   },
   {
     projectName: "Code Mentor server",
     githubLink: "https://github.com/DavidErenfeld/Code_Mentor_Server.git",
     websiteLink:
       "https://boiling-springs-91338-006b899baec7.herokuapp.com/codeBlocks",
-    technologies: ["JavaScript", "NodeJS", "Express", "MongoDB", "Socket.IO"],
+    technologies: ["NodeJS", "JavaScript", "Express", "MongoDB", "Socket.IO"],
+  },
+  {
+    projectName: "Starbuks Locations front",
+    githubLink: "https://github.com/DavidErenfeld/Task_Locations.git",
+    websiteLink: "https://task-locations-david-erenfeld.netlify.app/",
+    technologies: ["React", "JavaScript", "CSS", "OpenLayers"],
+  },
+  {
+    projectName: "Starbuks Locations server",
+    githubLink: "https://github.com/DavidErenfeld/Geo-Location-Service.git",
+    websiteLink: "https://geo-location-service-b0911ef2477e.herokuapp.com/",
+    technologies: ["NodeJS", "JavaScript", "Express", "Turf.js", "Docker"],
   },
   {
     projectName: "Travel easily front",
     githubLink: "https://github.com/DavidErenfeld/Travel-Easily-Front.git",
     websiteLink: "https://travel-easily.netlify.app/",
-    technologies: ["React", "TypeScript", "HTML", "CSS"],
+    technologies: ["React", "TypeScript", "CSS"],
   },
   {
     projectName: "Travel easily server",
@@ -24,8 +36,8 @@ export const myProjects = [
     websiteLink:
       "https://enigmatic-island-56921-258869278475.herokuapp.com/api-docs/",
     technologies: [
-      "TypeScript",
       "NodeJS",
+      "TypeScript",
       "Express",
       "MongoDB",
       "Jest",
@@ -36,7 +48,7 @@ export const myProjects = [
     projectName: "My Portfolio",
     githubLink: "https://github.com/DavidErenfeld/myPortfolio.git",
     websiteLink: "https://david-erenfeld.netlify.app/",
-    technologies: ["JavaScript", "React", "HTML", "CSS"],
+    technologies: ["React", "JavaScript", "CSS"],
   },
   {
     projectName: "Pig game",
