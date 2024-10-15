@@ -28,6 +28,7 @@
   --main-text-color: #e0f2fe;
   --main-background-color: #082f49;
   --border-color: #e0f2fe;
+ 
 
   /* Hover states and effects */
   --hover-main-background-color: #bae6fd;
@@ -42,6 +43,7 @@
   --dark-blu: #0ea5e9;
   --light-blu: #00a8ff;
   --gray-background: #4a4a4a;
+  --main-tag-background-color: #429907;
   --dark-gray: #858585;
   --timeline-dark-color: #718093;
   --timeline-light-color: #dcdde1;
@@ -67,6 +69,7 @@
 
   --gray-background: hsl(0, 5%, 88%);
   --dark-gray: hsl(0, 1%, 22%);
+  --main-tag-background-color: #02c72f;
 }
 
 html {
@@ -118,12 +121,20 @@ section {
   align-items: flex-start;
 }
 
+.flex-col-between-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 .flex-col-start-center {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
+
 .flex-col-center-center {
   display: flex;
   flex-direction: column;
@@ -234,7 +245,7 @@ button.blu-btn:hover {
 /*768*/
 @media (max-width: 48em) {
   html {
-    font-size: 52%;
+    font-size: 54%;
   }
 }
 

@@ -3,9 +3,11 @@ import WebsiteIcon from "../../Components/Icons/WebsiteIcon";
 import GithubIcon from "../../Components/Icons/GithubIcon";
 
 const ProjectCard = ({ projectDetails }) => {
-  const { projectName, websiteLink, githubLink, technologies } = projectDetails;
+  const { title, projectName, websiteLink, githubLink, technologies } =
+    projectDetails;
   return (
     <section className="card flex-col-start-start">
+      <p className="tech-tag main-tag">{title}</p>
       <p className="sub-titel">{projectName}</p>
       <div className="links flex-col-start-center flex-gap-s">
         <div className="link flex-row-space-between">

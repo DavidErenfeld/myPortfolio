@@ -1,37 +1,43 @@
 export const myProjects = [
   {
-    projectName: "Starbuks Locations front",
+    title: "Front-side",
+    projectName: "Starbuks Locations",
     githubLink: "https://github.com/DavidErenfeld/Task_Locations.git",
     websiteLink: "https://task-locations-david-erenfeld.netlify.app/",
     technologies: ["React", "JavaScript", "CSS", "OpenLayers"],
   },
   {
-    projectName: "Starbuks Locations server",
+    title: "Server-side",
+    projectName: "Starbuks Locations",
     githubLink: "https://github.com/DavidErenfeld/Geo-Location-Service.git",
     websiteLink: "https://geo-location-service-b0911ef2477e.herokuapp.com/",
     technologies: ["NodeJS", "JavaScript", "Express", "Turf.js", "Docker"],
   },
   {
-    projectName: "Code Mentor front",
+    title: "Front-side",
+    projectName: "Code Mentor",
     githubLink: "https://github.com/DavidErenfeld/Code_Mentor_Front.git",
     websiteLink: "https://codementor-daviderenfeld.netlify.app/",
-    technologies: ["JavaScript", "React", "CSS", "HTML", "Socket.IO"],
+    technologies: ["React", "JavaScript", "CSS", "Socket.IO"],
   },
   {
-    projectName: "Code Mentor server",
+    title: "Server-side",
+    projectName: "Code Mentor",
     githubLink: "https://github.com/DavidErenfeld/Code_Mentor_Server.git",
     websiteLink:
       "https://boiling-springs-91338-006b899baec7.herokuapp.com/codeBlocks",
     technologies: ["NodeJS", "JavaScript", "Express", "MongoDB", "Socket.IO"],
   },
   {
-    projectName: "Travel easily front",
+    title: "Front-side",
+    projectName: "Travel easily",
     githubLink: "https://github.com/DavidErenfeld/Travel-Easily-Front.git",
     websiteLink: "https://travel-easily.netlify.app/",
     technologies: ["React", "TypeScript", "CSS"],
   },
   {
-    projectName: "Travel easily server",
+    title: "Server-side",
+    projectName: "Travel easily",
     githubLink: "https://github.com/DavidErenfeld/Travel-Easily-Server.git",
     websiteLink:
       "https://enigmatic-island-56921-258869278475.herokuapp.com/api-docs/",
@@ -45,12 +51,14 @@ export const myProjects = [
     ],
   },
   {
+    title: "Front-side",
     projectName: "My Portfolio",
     githubLink: "https://github.com/DavidErenfeld/myPortfolio.git",
     websiteLink: "https://david-erenfeld.netlify.app/",
     technologies: ["React", "JavaScript", "CSS"],
   },
   {
+    title: "vanilla js",
     projectName: "Pig game",
     githubLink: "https://github.com/DavidErenfeld/Pig-Game.git",
     websiteLink: "https://tranquil-syrniki-b95ab5.netlify.app/",
