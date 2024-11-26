@@ -1,6 +1,38 @@
 export const myProjects = [
   {
     title: "Front-side",
+    projectName: "Travel easily",
+    githubLink: "https://github.com/DavidErenfeld/travel-Easily-App-Front.git",
+    websiteLink: "https://travel-easily-app.netlify.app",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Socket.IO",
+      "React i18next",
+      "Google OAuth",
+      "CSS",
+    ],
+  },
+  {
+    title: "Server-side",
+    projectName: "Travel easily",
+    githubLink: "https://github.com/DavidErenfeld/TravelEasilyAppBackend.git",
+    websiteLink:
+      "https://evening-bayou-77034-176dc93fb1e1.herokuapp.com/api-docs/",
+    technologies: [
+      "NodeJS",
+      "TypeScript",
+      "JWT",
+      "Google OAuth",
+      "Google API",
+      "PostgreSQL",
+      "Redis",
+      "Jest",
+      "Swagger",
+    ],
+  },
+  {
+    title: "Front-side",
     projectName: "Starbuks Locations",
     githubLink: "https://github.com/DavidErenfeld/Task_Locations.git",
     websiteLink: "https://task-locations-david-erenfeld.netlify.app/",
@@ -27,28 +59,6 @@ export const myProjects = [
     websiteLink:
       "https://boiling-springs-91338-006b899baec7.herokuapp.com/codeBlocks",
     technologies: ["NodeJS", "JavaScript", "Express", "MongoDB", "Socket.IO"],
-  },
-  {
-    title: "Front-side",
-    projectName: "Travel easily",
-    githubLink: "https://github.com/DavidErenfeld/Travel-Easily-Front.git",
-    websiteLink: "https://travel-easily.netlify.app/",
-    technologies: ["React", "TypeScript", "CSS"],
-  },
-  {
-    title: "Server-side",
-    projectName: "Travel easily",
-    githubLink: "https://github.com/DavidErenfeld/Travel-Easily-Server.git",
-    websiteLink:
-      "https://enigmatic-island-56921-258869278475.herokuapp.com/api-docs/",
-    technologies: [
-      "NodeJS",
-      "TypeScript",
-      "Express",
-      "MongoDB",
-      "Jest",
-      "Swagger",
-    ],
   },
   {
     title: "Front-side",
